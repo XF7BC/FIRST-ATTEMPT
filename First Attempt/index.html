@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
+    <title>Registration</title>
+</head>
+<body>
+     <?php
+     include ('index.php')
+     ?>
+     <div id="header">
+         <p id="headings"> TEST RUN FORM: Just a bit of fooling around, nothing special. :)  </p>
+     </div>
+     <div id="section">
+         <form id="form" action="index.php"  method="post" >
+             <label for="fname"> First Name </label><br>
+             <input type="text" name="fname" id="fname"  class="slots" placeholder="Enter your First Name"><br><br>
+             <label for="lname"> Last Name </label><br>
+             <input type="text" name="lname" id="lname" class="slots" placeholder="Enter your Last Name"><br><br>
+             <label for="uname"> Username </label><br>
+             <input type="text" name="uname" id="uname" class="slots" placeholder="Enter your Username"><br><br>
+             <label for="pword"> Password </label><br>
+             <input type="password" name="pword" id="pword" class="slots" placeholder="Enter your Password"><br><br>
+             <label for="pnumber"> Phone Number </label><br>
+             <input type="tel" name="pnumber" id="pnumber" class="slots" placeholder="Enter your Phone number"><br><br>
+             <label for="male"> Male </label>
+             <input type="radio" name="gender" id="male" class="gender">
+             <label for="female"> Female </label>
+             <input type="radio" name="gender" id="female" class="gender">
+             <label for="gender"> Others </label>
+             <input type="radio" name="gender" id="others" class="gender"><br><br>
+             <label for="newline"> If others specify, please specify: </label>
+             <input type="text" name="newline" id="newline"><br><br><br>
+             <input type="submit" name="button" id="submit">
+         </form>
+     </div>
+</body>
+</html>
