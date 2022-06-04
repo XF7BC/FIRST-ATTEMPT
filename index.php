@@ -20,7 +20,7 @@
  $gender = $_POST["gender"]; 
  
  $nline = $_POST["newline"];
- $email_from = "";
+ $email_from = "abiolajibola7@gmail.com";
  $email_subject =" Submission Form ";
  $email_body = " Name: $fname . $lname\n".
                 "Username: $uname\n".

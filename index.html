@@ -18,7 +18,7 @@
          <p id="headings"> TEST RUN FORM: Just a bit of fooling around, nothing special. :)  </p>
      </div>
      <div id="section">
-         <form id="form" action="index.php"  method="post" >
+         <form id="form" onsubmit="sendEmail(); reset(); return false;" >
              <label for="fname"> First Name </label><br>
              <input type="text" name="fname" id="fname"  class="slots" placeholder="Enter your First Name"><br><br>
              <label for="lname"> Last Name </label><br>
@@ -40,5 +40,21 @@
              <input type="submit" name="button" id="submit">
          </form>
      </div>
+     <script src = "https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+         function sendEmail(){
+         Email.send({
+              Host : "smtp.elasticemail.com:2525",
+             Username : "abiolajibola7@gmail.com",
+             Password : "88816BC2DD53C62C295F530D632518FEB1C6",
+              To : 'abiolaajibola777@gmail.com',
+             From : "you@isp.com",
+             Subject : "New Form Submission",
+              Body : "And this is the body"
+         }).then(
+             message => alert(message)
+         );
+        }
+     </script>
 </body>
 </html>
