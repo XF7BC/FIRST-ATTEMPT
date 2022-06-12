@@ -55,10 +55,11 @@ background-size: 70%;
 
 #header-content p {
     display: block;
-    font-size: 2em;
+    font-size: 2vw;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     padding: 0%;
+    width: 100%;
 }
 
 #newsletter-form {
