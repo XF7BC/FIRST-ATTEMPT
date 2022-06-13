@@ -166,6 +166,7 @@ display: flexbox;
     border: 0;
     text-align: center;
     width: 100%;
+    height: max-content;
 }
 
 #header-content p {
@@ -180,13 +181,14 @@ display: flexbox;
 #newsletter-form {
     text-align: center;
     padding-top: 0px;
-    margin-top: 0%;
+    margin-top: 0;
     width: 100%;
+    height: max-content;
 }
 
 form{
     padding: 0;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 /* this portion was removed from the main html post deploration
@@ -202,8 +204,8 @@ form{
 this portion was removed from the main html post deploration*/
 
 #submit{
-    height: 3.5em;
-    width: 3in;
+    height: 50px;
+    width: 100px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
@@ -223,7 +225,7 @@ this portion was removed from the main html post deploration*/
 
 #socials {
     text-align: center;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 }
