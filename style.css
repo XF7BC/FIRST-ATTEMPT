@@ -189,6 +189,8 @@ display: flexbox;
 form{
     padding: 0;
     margin-top: 0;
+    width: max-content;
+    height: fit-content;
 }
 
 /* this portion was removed from the main html post deploration
@@ -204,8 +206,8 @@ form{
 this portion was removed from the main html post deploration*/
 
 #submit{
-    height: 50px;
-    width: 100px;
+    height: 30px;
+    width: 70px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
